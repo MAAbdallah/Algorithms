@@ -1,0 +1,93 @@
+		/*String current = "" ;
+		
+		for(int i= 0;i<Input.length();i++)
+		{
+			Tag t = new Tag();
+
+			int lastIndex = -1;
+			int y = i+1;
+			current = Input.substring(i, y);
+			for (int j = 0;j<dec.size();j++)
+			{
+				if(current.equals(text.get(j)) )
+				{
+					lastIndex = j ;
+					//System.out.println(lastIndex);
+					break;
+				}
+			}
+			while (true&&y<Input.length())
+			{
+				boolean check = false ;
+				current = Input.substring(i, ++y);
+				for(int q = 0;q<dec.size();q++)
+				{
+					if(current.equals(dec.get(q)))
+					{
+						lastIndex = q;
+						check = true ;
+						break ;
+					}
+				}
+				if(check == false)
+				{
+					dec.add(current);
+					t.setPointer(lastIndex);
+					v.addElement(t);
+					break;
+				}
+			}
+			if (y>=Input.length())
+			{
+				t.setPointer(lastIndex);
+				v.addElement(t);
+			}
+			
+		}*/
+
+		/*for(int i=0;i<Input.length();i++)
+        {
+			int y = i+1;
+
+			Tag t = new Tag();
+			String temp = "" ;
+			String current = "" ;
+			current = Input.substring(i, y);
+			if(y<Input.length())
+			{
+				temp = Input.substring(i, ++y);
+			}
+			if (temp=="")
+			{
+				t.setPointer(text.indexOf(current));
+				v.addElement(t);
+			}
+
+			if (search(temp)==false)
+			{
+				dec.addElement(temp);
+				t.setPointer(dec.indexOf(current));
+				v.addElement(t);
+			}
+			else 
+			{
+				while(true&&y<Input.length())
+				{
+					current = Input.substring(i, y);
+
+					temp = Input.substring(i, ++y);
+					if (search(temp)==false)
+					{
+						dec.addElement(temp);
+						t.setPointer(dec.indexOf(current));
+						v.addElement(t);
+						break ;
+					}
+					else
+					{
+						continue ;
+					}
+							
+				}
+			}
+        }*/

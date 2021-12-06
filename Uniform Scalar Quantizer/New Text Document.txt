@@ -1,0 +1,108 @@
+
+	        int x = getAve(arr);
+	        int temb1 = x-1;
+	        int temb2 = x+1;
+	        System.out.println(x+" "+temb1+" "+temb2);
+	        Vector<Integer> arr1 = new Vector<Integer>();
+	        Vector<Integer> arr2 = new Vector<Integer>();
+
+
+	        /*for (int i =0;i<arr.size();i++)
+	        {
+	            int dif1 = temb1-arr.get(i);
+	            int dif2 = temb2-arr.get(i);
+
+	            if(dif1<0) { dif1*=-1; }
+	            if(dif2<0) { dif2*=-1; }
+
+	            if(dif1<=dif2)
+	            {
+	                arr1.add(arr.get(i));
+	            }
+	            else
+	            {
+	                arr2.add(arr.get(i));
+	            }
+	        }
+	        for (int i=0;i<arr1.size();i++)
+	        {
+	            System.out.print("  "+arr1.get(i));
+	        }
+	        System.out.println("");
+
+	        for (int i=0;i<arr2.size();i++)
+	        {
+	            System.out.print("  " +arr2.get(i));
+	        }
+	        System.out.println("");
+	        
+	        int ave1 = getAve(arr1);
+	        int ave2 = getAve(arr2);
+	        System.out.println(ave1+" "+ave2);
+
+	        int temb11 = ave1-1;
+	        int temb12 = ave1+1;
+	        int temb21 = ave2-1;
+	        int temb22 = ave2+1;
+
+	        Vector<Integer> arr11 = new Vector<Integer>();
+	        Vector<Integer> arr12 = new Vector<Integer>();
+
+	        Vector<Integer> arr21 = new Vector<Integer>();
+	        Vector<Integer> arr22 = new Vector<Integer>();
+
+	        for (int i =0;i<arr.size();i++)
+	        {
+	            int dif11 = temb11-arr.get(i);
+	            int dif12 = temb12-arr.get(i);
+	            int dif21 = temb21-arr.get(i);
+	            int dif22 = temb22-arr.get(i);
+
+	            if(dif11<0) { dif11*=-1; }
+	            if(dif12<0) { dif12*=-1; }
+	            if(dif21<0) { dif21*=-1; }
+	            if(dif22<0) { dif22*=-1; }
+
+	            if(dif11<=dif12&&dif11<=dif21&&dif11<=dif22)
+	            {
+	                arr11.add(arr.get(i));
+	            }
+	            if(dif12<=dif11&&dif12<=dif21&&dif12<=dif22)
+	            {
+	                arr12.add(arr.get(i));
+	            }
+	            if(dif21<=dif11&&dif21<=dif12&&dif21<=dif22)
+	            {
+	                arr21.add(arr.get(i));
+	            }
+	            if(dif22<=dif11&&dif22<=dif12&&dif22<=dif21)
+	            {
+	                arr22.add(arr.get(i));
+	            }
+	        }
+	        for (int i=0;i<arr11.size();i++)
+	        {
+	            System.out.print("  " +arr11.get(i));
+	        }
+	        System.out.println("");
+	        for (int i=0;i<arr12.size();i++)
+	        {
+	            System.out.print("  " +arr12.get(i));
+	        }
+	        System.out.println("");
+	        for (int i=0;i<arr21.size();i++)
+	        {
+	            System.out.print("  " +arr21.get(i));
+	        }
+	        System.out.println("");
+	        for (int i=0;i<arr22.size();i++)
+	        {
+	            System.out.print("  " +arr22.get(i));
+	        }
+	        System.out.println("");
+
+	        int ave11 = (int) Math.ceil(getAve(arr11));
+	        int ave12 = (int) Math.ceil(getAve(arr12));
+	        int ave21 = (int) Math.ceil(getAve(arr21));
+	        int ave22 = (int) Math.ceil(getAve(arr22));
+	        System.out.println(ave11+" "+ave12+" "+ave21+" "+ave22);*/

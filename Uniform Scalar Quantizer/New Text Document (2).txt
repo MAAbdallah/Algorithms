@@ -1,0 +1,30 @@
+Vector<Node2> v2 = new Vector<Node2>();
+			int index =0;
+			while (index<levelnum) {
+				if(index==0||check==true)
+				{
+				int x = getAve(a);
+				int temb1 = x - 1;
+				int temb2 = x + 1;
+				System.out.println(x + " " + temb1 + " " + temb2);
+				v.add(temb1);
+				v.add(temb2);}
+				//Vector<Node2> v2 = new Vector<Node2>();
+				if(check==false) {
+					v2 = association(v);
+					v.removeAll(v);
+					index++;
+					for (int i = 0; i < v2.size(); i++) {
+						check=true;
+						process(v2.get(i).v);
+					}
+					check=false;
+				}
+			}
+			for(int i=0;i<v2.size();i++)
+			{
+				for(int j=0;j<v2.get(i).v.size();j++)
+				{
+					System.out.println(v2.get(i).ave+" : "+v2.get(i).v.get(j));
+				}
+			}
